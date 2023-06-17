@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 export const metadata = {
-  title: "TinckCar | Дистриб'юторська компанія продукції для діагностики авто",
+  title: "ThinkCar | Дистриб'юторська компанія продукції для діагностики авто",
   description: "Дистриб'юторська компанія продукції для діагностики авто",
 };
 

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TinckCar | Завантаження",
+  title: "ThinkCar | Завантаження",
 };
 
 export default function Download() {

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TinckCar | Доставка та оплата",
+  title: "ThinkCar | Доставка та оплата",
 };
 
 export default function Delivery() {

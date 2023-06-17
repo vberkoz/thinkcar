@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TinckCar | Покриття авто",
+  title: "ThinkCar | Покриття авто",
 };
 
 export default function Cover() {

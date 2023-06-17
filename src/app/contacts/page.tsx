@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TinckCar | Контакти",
+  title: "ThinkCar | Контакти",
 };
 
 export default function Contacts() {

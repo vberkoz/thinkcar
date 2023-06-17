@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TinckCar | Як стати дилером",
+  title: "ThinkCar | Як стати дилером",
 };
 
 export default function Dealership() {
