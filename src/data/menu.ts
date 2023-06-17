@@ -1,8 +1,8 @@
 export const items = [
-  { title: "Про нас", href: "about" },
-  { title: "Покриття авто", href: "cover" },
-  { title: "Завантаження", href: "download" },
-  { title: "Як стати дилером", href: "dealership" },
-  { title: "Доставка та оплата", href: "delivery" },
-  { title: "Контакти", href: "contacts" },
+  { title: "About us", href: "about-us" },
+  { title: "Car coverage", href: "car-coverage" },
+  { title: "Downloads", href: "downloads" },
+  { title: "Dealership", href: "dealership" },
+  { title: "Delivery and payment", href: "delivery-and-payment" },
+  { title: "Contacts", href: "contacts" },
 ];
