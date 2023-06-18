@@ -3,6 +3,6 @@ export const items = [
   { title: "Car coverage", href: "car-coverage" },
   { title: "Downloads", href: "downloads" },
   { title: "Dealership", href: "dealership" },
-  { title: "Delivery and payment", href: "delivery-and-payment" },
+  { title: "Delivery", href: "delivery" },
   { title: "Contacts", href: "contacts" },
 ];
