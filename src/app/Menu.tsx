@@ -73,7 +73,7 @@ export default function Menu() {
 
         <Link
           href="/"
-          className="py-2 px-3 hover:bg-gray-200 outline-none focus:ring-2 ring-inset ring-red-800 fill-red-800"
+          className={`${searchOpened ? "hidden xl:flex" : "flex"} py-2 px-3 hover:bg-gray-200 outline-none focus:ring-2 ring-inset ring-red-800 fill-red-800`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +188,7 @@ export default function Menu() {
         </button>
         <Link
           href="#"
-          className="text-gray-100 dark:text-gray-900 bg-red-800 hover:bg-red-700 p-[9px] outline-none focus:ring-[1px] ring-inset ring-gray-100 border-[3px] border-red-800 hover:border-red-700"
+          className="text-gray-100 dark:text-gray-900 bg-red-800 hover:bg-red-700 p-[9px] outline-none focus:ring-[1px] ring-inset ring-gray-100 border-[3px] border-red-800 hover:border-red-700 hidden sm:block"
         >
           Call you back?
         </Link>
