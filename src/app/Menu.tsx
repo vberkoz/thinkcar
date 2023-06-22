@@ -188,7 +188,7 @@ export default function Menu() {
         </button>
         <Link
           href="#"
-          className="text-gray-100 dark:text-gray-900 bg-red-800 hover:bg-red-700 p-[9px] outline-none focus:ring-[1px] ring-inset ring-gray-100 border-[3px] border-red-800 hover:border-red-700 hidden sm:block"
+          className="text-gray-100 bg-red-800 hover:bg-red-700 p-[9px] outline-none focus:ring-[1px] ring-inset ring-gray-100 border-[3px] border-red-800 hover:border-red-700 hidden sm:block"
         >
           Call you back?
         </Link>
