@@ -6,9 +6,9 @@ import instagram from "@/images/logo--instagram.svg";
 
 export default function Footer() {
   return (
-    <div className="bg-black text-zinc-400 pl-[258px] pr-[127px] pt-14">
-      <div className="grid grid-cols-4">
-        <Link href="/" className="fill-zinc-400">
+    <div className="bg-black text-zinc-400 py-10 px-2">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+        <Link href="/" className="fill-zinc-400 mb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 70.67 8.88"
@@ -25,43 +25,50 @@ export default function Footer() {
             <path d="M62.22,8.74V.15h4.42c.82,0,1.45,.07,1.88,.21s.78,.4,1.05,.78,.4,.84,.4,1.39c0,.48-.1,.89-.3,1.23-.2,.35-.48,.63-.84,.84-.23,.14-.54,.25-.93,.34,.32,.11,.55,.21,.69,.32,.1,.07,.24,.22,.42,.45,.19,.23,.31,.41,.37,.53l1.29,2.49h-3l-1.42-2.62c-.18-.34-.34-.56-.48-.66-.19-.13-.41-.2-.65-.2h-.23v3.49h-2.67Zm2.67-5.11h1.12c.12,0,.36-.04,.7-.12,.18-.04,.32-.12,.43-.27s.17-.31,.17-.5c0-.28-.09-.49-.26-.64s-.51-.22-.99-.22h-1.17v1.75Z" />
           </svg>
         </Link>
-        <div className="col-span-3 grid grid-cols-3">
+
+        <div className="md:col-span-2 xl:hidden"></div>
+
+        <div className="sm:col-span-2 md:col-span-3 xl:col-span-3 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3">
           {items.map((item) => (
-            <Link href={item.href} key={item.href} className="pl-3 xl:pl-6 hover:underline">
+            <Link
+              href={item.href}
+              key={item.href}
+              className="py-1 hover:underline"
+            >
               {item.title}
             </Link>
           ))}
         </div>
+
         <div className="hidden xl:block"></div>
-          <div className="border-t-2 border-gray-200 dark:border-gray-700 sm:col-span-2 lg:col-span-3 xl:col-span-3"></div>
-          <div className="hidden xl:block"></div>
-          <div className="flex flex-col pl-3 xl:pl-6">© VO Group, LLC</div>
-        <div className="mb-2">
-          <span className="text-white">E-mail:</span> support@thinkcar.com
+        <div className="border-t-2 border-zinc-400 my-2 sm:col-span-2 md:col-span-3 xl:col-span-3"></div>
+        <div className="hidden xl:block"></div>
+
+        <div className="flex items-center fill-zinc-400">
+          <Image src={facebook} alt="facebook" height={30} width={30} />
+          <Image src={instagram} alt="instagram" height={30} width={30} />
         </div>
-        <div className="mb-7">
-          <span className="text-white">Service center:</span> +1 555-123-4567
+
+        <div className="md:hidden"></div>
+        <div className="md:hidden"></div>
+
+        <div>
+          <div>
+            <span className="text-white">E-mail:</span> support@thinkcar.com
+          </div>
+          <div>
+            <span className="text-white">Service center:</span> +1 555-123-4567
+          </div>
         </div>
-        <div className="flex justify-between items-center mb-14">
-          <div className="flex items-center">
-            <Image
-              src={facebook}
-              alt="facebook"
-              height={30}
-              width={30}
-              className="mr-4"
-            />
-            <Image src={instagram} alt="instagram" height={30} width={30} />
-          </div>
-          <div className="flex items-center">
-            <button className="bg-zinc-400 hover:bg-zinc-300 text-black font-semibold px-5 py-2 rounded-s-[5px]">
-              Subscribe
-            </button>
-            <input
-              placeholder="Please enter your E-mail"
-              className="px-5 py-2 outline-none w-96 rounded-e-[5px] text-white bg-black ring-1 ring-zinc-400 ring-inset"
-            />
-          </div>
+
+        <div className="flex items-center my-2">
+          <input
+            placeholder="Please enter your E-mail"
+            className="px-5 py-2 outline-none w-full text-white bg-black ring-1 ring-zinc-400 ring-inset"
+          />
+          <button className="bg-zinc-400 hover:bg-zinc-300 text-black px-5 py-2">
+            Subscribe
+          </button>
         </div>
       </div>
     </div>
