@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import Footer from "./Footer";
-import Header from "./Header";
 
 import { IBM_Plex_Sans } from "next/font/google";
+import Menu from "./Menu";
 const sans = IBM_Plex_Sans({
   subsets: ["latin"],
   style: ["normal", "italic"],
@@ -14,9 +14,9 @@ export const metadata = {
   title: "ThinkCar | Distribution company of products for car diagnostics",
   description: "Distribution company of products for car diagnostics",
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
@@ -26,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`h-full ${sans.variable}`}>
-      <body className="flex flex-col h-full bg-[#EFEFEF]">
-        <Header />
+    <html lang="en" className={`${sans.variable}`}>
+      <body className="bg-zinc-100">
+        <Menu />
         {children}
         <Footer />
       </body>
