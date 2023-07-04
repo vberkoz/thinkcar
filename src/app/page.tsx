@@ -1,6 +1,7 @@
-import slide1 from "@/images/slide1.webp";
-import slide2 from "@/images/slide2.webp";
-import slide3 from "@/images/slide3.webp";
+import slideThinktoolMaster2 from "@/images/slide-thinktool-master-2.webp";
+import slideThinktoolX10 from "@/images/slide-thinktool-x10.webp";
+import slideThinktoolSe from "@/images/slide-thinktool-se.webp";
+import slideTpms from "@/images/slide-tpms.webp";
 import Slides from "./Slides";
 
 import cardImg1 from "@/images/thinktool-master-2.webp"
@@ -13,7 +14,15 @@ import SectionCTTTx2 from "./SectionCTTTx2";
 
 const slides = [
   {
-    image: slide2.src,
+    image: slideThinktoolMaster2.src,
+    title: "THINKTOOL MASTER 2",
+    description:
+      "Updated version of ThinkTool Master: Online Programming + Advanced Diagnostics + OE-level Coverage.",
+    button: "VO Solutions",
+    href: "/",
+  },
+  {
+    image: slideThinktoolX10.src,
     title: "THINKTOOL X10",
     description:
       "Change the way you diagnose. See, hear. The first real-time remote diagnostic service!",
@@ -21,25 +30,17 @@ const slides = [
     href: "/",
   },
   {
-    image: slide3.src,
+    image: slideThinktoolSe.src,
     title: "THINKTOOL SE",
     description: "8-inch classic diagnostic pad.",
     button: "VO Solutions",
     href: "/",
   },
   {
-    image: slide3.src,
+    image: slideTpms.src,
     title: "Intellectual TPMS service tool with",
     description:
       "Full TPMS sensor activation, programming, and relearning function.",
-    button: "VO Solutions",
-    href: "/",
-  },
-  {
-    image: slide1.src,
-    title: "THINKTOOL MASTER 2",
-    description:
-      "Updated version of ThinkTool Master: Online Programming + Advanced Diagnostics + OE-level Coverage.",
     button: "VO Solutions",
     href: "/",
   },

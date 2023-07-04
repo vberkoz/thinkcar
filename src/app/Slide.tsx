@@ -60,7 +60,6 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
         className="
           text-left xl:pr-[127px]
           text-gray-900
-          bg-gradient-to-r from-gray-100/100 to-gray-100/0
         "
       >
         <div className="">
@@ -69,7 +68,7 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
               <h1 className="xl:pl-[258px] xl:pr-[127px] lg:pt-14 mb-4 text-4xl font-light sm:text-5xl">
                 {item.title}
               </h1>
-              <div className="xl:pl-[258px] xl:pr-[127px] grid xl:grid-cols-4">
+              <div className="xl:pl-[258px] xl:pr-[127px] grid xl:grid-cols-4 h-32">
                 <p className="md:w-[29rem] xl:col-span-2">{item.description}</p>
               </div>
               <div className="grow"></div>
