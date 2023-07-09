@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 
 type Props = {
@@ -27,11 +27,10 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
             bg-red-800 hover:bg-red-700
             outline-none focus:ring-[1px] ring-inset ring-gray-100
             border-[3px] border-red-800 hover:border-red-700
-          `
-        }
+          `}
         onClick={() => onShow(i)}
         onKeyUp={(e) => {
-          return e.key === "Enter" && onShow(i)
+          return e.key === "Enter" && onShow(i);
         }}
       ></Link>
     );
@@ -56,30 +55,25 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
       }}
       className={`${isActive ? "block" : "hidden"}`}
     >
-      <div 
-        className="
-          text-left xl:pr-[127px]
-          text-gray-900
-        "
-      >
+      <div className="text-left text-gray-900">
         <div className="">
           <div className="flex flex-col">
             <div className="p-3">
-              <h1 className="xl:pl-[258px] xl:pr-[127px] lg:pt-14 mb-4 text-4xl font-light sm:text-5xl">
+              <h1 className="lg:pt-14 mb-4 text-4xl font-light sm:text-5xl">
                 {item.title}
               </h1>
-              <div className="xl:pl-[258px] xl:pr-[127px] grid xl:grid-cols-4 h-32">
+              <div className="grid xl:grid-cols-4 h-32">
                 <p className="md:w-[29rem] xl:col-span-2">{item.description}</p>
               </div>
               <div className="grow"></div>
             </div>
 
-            <div className="pl-3">
-              <div className="flex py-8 xl:pl-[258px] pr-0">
-                <button 
+            <div className="px-3">
+              <div className="flex py-8 pr-0">
+                <button
                   onClick={() => onShow(prev)}
                   onKeyUp={(e) => {
-                    return e.key === "Enter" && onShow(prev)
+                    return e.key === "Enter" && onShow(prev);
                   }}
                   className="
                     cursor-pointer p-3
@@ -89,13 +83,20 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
                     border-[3px] border-red-800 hover:border-red-700
                   "
                 >
-                  <svg fill="currentColor" width="32" height="32" viewBox="0 0 32 32"><path d="M10 16L20 6 21.4 7.4 12.8 16 21.4 24.6 20 26z"></path></svg>
+                  <svg
+                    fill="currentColor"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <path d="M10 16L20 6 21.4 7.4 12.8 16 21.4 24.6 20 26z"></path>
+                  </svg>
                 </button>
                 <div className="grow"></div>
-                <button 
+                <button
                   onClick={() => onShow(next)}
                   onKeyUp={(e) => {
-                    return e.key === "Enter" && onShow(next)
+                    return e.key === "Enter" && onShow(next);
                   }}
                   className="
                     cursor-pointer p-3
@@ -105,7 +106,14 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
                     border-[3px] border-red-800 hover:border-red-700
                   "
                 >
-                  <svg fill="currentColor" width="32" height="32" viewBox="0 0 32 32"><path d="M22 16L12 26 10.6 24.6 19.2 16 10.6 7.4 12 6z"></path></svg>
+                  <svg
+                    fill="currentColor"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <path d="M22 16L12 26 10.6 24.6 19.2 16 10.6 7.4 12 6z"></path>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -114,9 +122,7 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
 
         <div className="grid h-32 grid-cols-2 md:grid-cols-4">
           <div className="flex flex-col justify-end md:col-span-3">
-            <div className="xl:pl-[258px]">
-              <nav className="p-3">{rows}</nav>
-            </div>
+            <nav className="p-3">{rows}</nav>
           </div>
           {/* <Link
             href={item.href}
@@ -138,4 +144,4 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
       </div>
     </div>
   );
-};
+}

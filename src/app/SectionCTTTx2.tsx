@@ -70,14 +70,9 @@ import bulb from "@/public/home/bulb.svg";
 
 export default function SectionCTTTx2({ section }: Props) {
   return (
-    <div
-      className="
-        py-4 xl:pr-[127px]
-        bg-gray-100
-      "
-    >
-      <div className="xl:flex px-3 py-8">
-        <div className="min-w-[258px] mb-10 font-bold">
+    <div className="py-4 xl:pr-[127px] bg-gray-100">
+      <div className="grid grid-cols-1 xl:grid-cols-4 px-3 py-8">
+        <div className="mb-10 font-bold">
           {section.caption.map((item, pKey) => {
             if (Array.isArray(item)) {
               return (
@@ -100,7 +95,7 @@ export default function SectionCTTTx2({ section }: Props) {
           })}
         </div>
 
-        <div className="grow grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+        <div className="xl:col-span-3 grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
           <Item data={section.data[0]} />
           <Item data={section.data[1]} />
           <div className="col-span-2 hidden border-t border-gray-300 md:block lg:hidden"></div>

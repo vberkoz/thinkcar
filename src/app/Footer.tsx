@@ -6,68 +6,71 @@ import instagram from "@/images/logo--instagram.svg";
 
 export default function Footer() {
   return (
-    <div className="bg-black text-zinc-400 py-10 pr-2 pl-2 xl:pr-[127px] xl:flex">
-      <Link
-        href="/"
-        className="fill-zinc-400 w-fit h-fit outline-none focus:ring-2 ring-red-800"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 70.67 8.88"
-          width={234}
-          height={32}
+    <div className="xl:pr-[127px] bg-black text-zinc-400">
+      <div className="py-10 px-3 grid grid-cols-1 xl:grid-cols-4">
+        <Link
+          href="/"
+          className="fill-zinc-400 w-fit h-fit outline-none focus:ring-2 ring-red-800"
         >
-          <path d="M0,.15H8.07V2.27h-2.71v6.47H2.71V2.27H0V.15Z" />
-          <path d="M9.28,.15h2.65V3.15h2.9V.15h2.67V8.74h-2.67v-3.47h-2.9v3.47h-2.65V.15Z" />
-          <path d="M19.37,.15h2.66V8.74h-2.66V.15Z" />
-          <path d="M23.95,.15h2.48l3.23,4.75V.15h2.5V8.74h-2.5l-3.22-4.72v4.72h-2.5V.15Z" />
-          <path d="M33.94,.15h2.65V3.39L39.38,.15h3.53l-3.13,3.24,3.28,5.35h-3.27l-1.81-3.53-1.37,1.44v2.1h-2.65V.15Z" />
-          <path d="M49.24,5.22l2.33,.7c-.16,.65-.4,1.2-.74,1.63s-.75,.77-1.25,.99-1.13,.33-1.9,.33c-.93,0-1.7-.14-2.29-.41-.59-.27-1.1-.75-1.53-1.43s-.64-1.56-.64-2.62c0-1.42,.38-2.51,1.13-3.28,.76-.76,1.83-1.14,3.21-1.14,1.08,0,1.93,.22,2.55,.66s1.08,1.11,1.38,2.02l-2.34,.52c-.08-.26-.17-.45-.26-.57-.15-.2-.33-.36-.54-.47s-.46-.16-.72-.16c-.6,0-1.06,.24-1.38,.73-.24,.36-.36,.92-.36,1.69,0,.95,.14,1.6,.43,1.96s.7,.53,1.22,.53,.89-.14,1.15-.43,.45-.7,.57-1.24Z" />
-          <path d="M58.13,7.32h-3.01l-.42,1.42h-2.71L55.22,.15h2.9l3.23,8.59h-2.78l-.43-1.42Zm-.55-1.86l-.95-3.09-.94,3.09h1.89Z" />
-          <path d="M62.22,8.74V.15h4.42c.82,0,1.45,.07,1.88,.21s.78,.4,1.05,.78,.4,.84,.4,1.39c0,.48-.1,.89-.3,1.23-.2,.35-.48,.63-.84,.84-.23,.14-.54,.25-.93,.34,.32,.11,.55,.21,.69,.32,.1,.07,.24,.22,.42,.45,.19,.23,.31,.41,.37,.53l1.29,2.49h-3l-1.42-2.62c-.18-.34-.34-.56-.48-.66-.19-.13-.41-.2-.65-.2h-.23v3.49h-2.67Zm2.67-5.11h1.12c.12,0,.36-.04,.7-.12,.18-.04,.32-.12,.43-.27s.17-.31,.17-.5c0-.28-.09-.49-.26-.64s-.51-.22-.99-.22h-1.17v1.75Z" />
-        </svg>
-      </Link>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 70.67 8.88"
+            width={234}
+            height={32}
+          >
+            <path d="M0,.15H8.07V2.27h-2.71v6.47H2.71V2.27H0V.15Z" />
+            <path d="M9.28,.15h2.65V3.15h2.9V.15h2.67V8.74h-2.67v-3.47h-2.9v3.47h-2.65V.15Z" />
+            <path d="M19.37,.15h2.66V8.74h-2.66V.15Z" />
+            <path d="M23.95,.15h2.48l3.23,4.75V.15h2.5V8.74h-2.5l-3.22-4.72v4.72h-2.5V.15Z" />
+            <path d="M33.94,.15h2.65V3.39L39.38,.15h3.53l-3.13,3.24,3.28,5.35h-3.27l-1.81-3.53-1.37,1.44v2.1h-2.65V.15Z" />
+            <path d="M49.24,5.22l2.33,.7c-.16,.65-.4,1.2-.74,1.63s-.75,.77-1.25,.99-1.13,.33-1.9,.33c-.93,0-1.7-.14-2.29-.41-.59-.27-1.1-.75-1.53-1.43s-.64-1.56-.64-2.62c0-1.42,.38-2.51,1.13-3.28,.76-.76,1.83-1.14,3.21-1.14,1.08,0,1.93,.22,2.55,.66s1.08,1.11,1.38,2.02l-2.34,.52c-.08-.26-.17-.45-.26-.57-.15-.2-.33-.36-.54-.47s-.46-.16-.72-.16c-.6,0-1.06,.24-1.38,.73-.24,.36-.36,.92-.36,1.69,0,.95,.14,1.6,.43,1.96s.7,.53,1.22,.53,.89-.14,1.15-.43,.45-.7,.57-1.24Z" />
+            <path d="M58.13,7.32h-3.01l-.42,1.42h-2.71L55.22,.15h2.9l3.23,8.59h-2.78l-.43-1.42Zm-.55-1.86l-.95-3.09-.94,3.09h1.89Z" />
+            <path d="M62.22,8.74V.15h4.42c.82,0,1.45,.07,1.88,.21s.78,.4,1.05,.78,.4,.84,.4,1.39c0,.48-.1,.89-.3,1.23-.2,.35-.48,.63-.84,.84-.23,.14-.54,.25-.93,.34,.32,.11,.55,.21,.69,.32,.1,.07,.24,.22,.42,.45,.19,.23,.31,.41,.37,.53l1.29,2.49h-3l-1.42-2.62c-.18-.34-.34-.56-.48-.66-.19-.13-.41-.2-.65-.2h-.23v3.49h-2.67Zm2.67-5.11h1.12c.12,0,.36-.04,.7-.12,.18-.04,.32-.12,.43-.27s.17-.31,.17-.5c0-.28-.09-.49-.26-.64s-.51-.22-.99-.22h-1.17v1.75Z" />
+          </svg>
+        </Link>
 
-      <div className="grow grid sm:grid-cols-2 lg:grid-cols-3 xl:ml-8 mt-10 xl:mt-0">
-        <div className="sm:col-span-2 lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 w-full">
-          {items.map((item) => (
-            <Link
-              href={item.href}
-              key={item.href}
-              className="my-1 w-fit hover:underline outline-none focus:ring-2 ring-red-800"
-            >
-              {item.title}
-            </Link>
-          ))}
-        </div>
+        <div className="xl:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 mt-10 xl:mt-0">
+          <div className="sm:col-span-2 lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
+            {items.map((item) => (
+              <Link
+                href={item.href}
+                key={item.href}
+                className="my-1 w-fit hover:underline outline-none focus:ring-2 ring-red-800"
+              >
+                {item.title}
+              </Link>
+            ))}
 
-        <div className="border-t border-zinc-400 my-4 sm:col-span-2 lg:col-span-3"></div>
+            <div className="border-t border-zinc-400 my-4 sm:col-span-2 lg:col-span-3"></div>
 
-        <div className="flex items-center fill-zinc-400">
-          <Image src={facebook} alt="facebook" height={30} width={30} />
-          <Image src={instagram} alt="instagram" height={30} width={30} />
-        </div>
+            <div className="flex items-center fill-zinc-400">
+              <Image src={facebook} alt="facebook" height={30} width={30} />
+              <Image src={instagram} alt="instagram" height={30} width={30} />
+            </div>
 
-        <div className="">
-          <div className="my-1">
-            <span className="text-white">E-mail:</span> support@thinkcar.com
+            <div className="">
+              <div className="my-1">
+                <span className="text-white">E-mail:</span> support@thinkcar.com
+              </div>
+              <div className="my-1">
+                <span className="text-white">Service center:</span> +1
+                555-123-4567
+              </div>
+            </div>
+
+            <div className="md:hidden"></div>
+            <div className="md:hidden"></div>
+
+            <div className="flex items-center my-2 sm:col-span-2 lg:col-span-1">
+              <input
+                placeholder="Please enter your E-mail"
+                className="px-3 py-2 outline-none w-full text-white bg-black ring-1 ring-zinc-400 ring-inset focus:ring-4 focus:ring-red-800"
+              />
+              <button className="bg-zinc-400 hover:bg-zinc-300 text-black px-3 py-2 outline-none focus:ring-4 ring-inset ring-red-800">
+                Subscribe
+              </button>
+            </div>
           </div>
-          <div className="my-1">
-            <span className="text-white">Service center:</span> +1 555-123-4567
-          </div>
-        </div>
-
-        <div className="md:hidden"></div>
-        <div className="md:hidden"></div>
-
-        <div className="flex items-center my-2 sm:col-span-2 lg:col-span-1">
-          <input
-            placeholder="Please enter your E-mail"
-            className="px-3 py-2 outline-none w-full text-white bg-black ring-1 ring-zinc-400 ring-inset focus:ring-4 focus:ring-red-800"
-          />
-          <button className="bg-zinc-400 hover:bg-zinc-300 text-black px-3 py-2 outline-none focus:ring-4 ring-inset ring-red-800">
-            Subscribe
-          </button>
         </div>
       </div>
     </div>
