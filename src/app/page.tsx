@@ -19,6 +19,9 @@ import thinkcarTWand200 from "@/images/thinkcarTWand200.webp";
 import thinkcarProg from "@/images/thinkcarProg.webp";
 import SectionCTTTx2 from "./SectionCTTTx2";
 
+import dealerImg from "@/images/dealer.webp";
+import Hero from "./Hero";
+
 const slides = [
   {
     image: slideThinktoolMaster2.src,
@@ -114,6 +117,17 @@ const novelty = {
   ],
 };
 
+const dealer = {
+  id: "Hero",
+  image: dealerImg.src,
+  title: "Become a dealer",
+  content: [
+    "Click the button below, fill out the application form, and we will contact you!",
+  ],
+  link: "Join now",
+  href: "/",
+}
+
 const topProducts = {
   id: "SectionCTTTx2",
   caption: ["Top products"],
@@ -181,6 +195,7 @@ export default function Home() {
       <Slides data={slides} />
       <SectionCTTTx2 section={novelty} />
       <SectionCTTTx2 section={topProducts} />
+      <Hero data={dealer} />
     </main>
   );
 }
