@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${sans.variable}`}>
-      <body className="bg-zinc-100">
+      <body className="bg-zinc-100 flex flex-col justify-between h-screen">
         <Menu />
         {children}
         <Footer />
