@@ -25,8 +25,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const GTM_ID = 'G-PG1S2YZ8KQ';
+
   return (
     <html lang="en" className={`${sans.variable}`}>
+      <head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GTM_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GTM_ID}');
+            `,
+          }}
+        />
+      </head>
       <body className="bg-zinc-100 flex flex-col justify-between h-screen">
         <Menu />
         {children}
