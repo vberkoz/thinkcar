@@ -14,9 +14,9 @@ export default function Menu() {
     setMenuOpened(!menuOpened);
   };
 
-  const toggleSearch = () => {
-    setSearchOpened(!searchOpened);
-  };
+  // const toggleSearch = () => {
+  //   setSearchOpened(!searchOpened);
+  // };
 
   const pathname = usePathname();
 
@@ -102,7 +102,7 @@ export default function Menu() {
           </svg>
         </Link>
 
-        <div className="hidden xl:flex">
+        {/* <div className="hidden xl:flex">
           <div className="my-3 border-r border-gray-200"></div>
 
           <div className={`float-left ${searchOpened ? "hidden" : "flex"}`}>
@@ -122,10 +122,10 @@ export default function Menu() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div
+      {/* <div
         className={`${
           searchOpened ? "block" : "hidden"
         } flex outline-none ring-2 ring-inset ring-red-800 border-0 grow`}
@@ -151,10 +151,10 @@ export default function Menu() {
             <path d="M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4 14.6 16 8 22.6 9.4 24 16 17.4 22.6 24 24 22.6 17.4 16 24 9.4z"></path>
           </svg>
         </button>
-      </div>
+      </div> */}
 
       <div className="flex">
-        <button
+        {/* <button
           className={`${
             searchOpened ? "hidden" : "block"
           } cursor-pointer p-3 hover:bg-gray-200 outline-none focus:ring-2 ring-inset ring-red-800`}
@@ -163,13 +163,13 @@ export default function Menu() {
           <svg fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
             <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" />
           </svg>
-        </button>
+        </button> */}
         {/* <button className="cursor-pointer p-3 hover:bg-gray-200 outline-none focus:ring-2 ring-inset ring-red-800">
           <svg fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
             <path d="M20,16a5,5,0,0,0,10,0,1,1,0,0,0-.1055-.4473L25.896,7.5562a.8913.8913,0,0,0-.0454-.0816A1,1,0,0,0,25,7H18.8218A3.0155,3.0155,0,0,0,17,5.1841V2H15V5.1841A3.0155,3.0155,0,0,0,13.1782,7H7a1,1,0,0,0-.8945.5527l-4,8A1,1,0,0,0,2,16a5,5,0,0,0,10,0,1,1,0,0,0-.1055-.4473L8.6182,9h4.56A3.0147,3.0147,0,0,0,15,10.8154V28H6v2H26V28H17V10.8159A3.0155,3.0155,0,0,0,18.8218,9h4.56l-3.2763,6.5527A1,1,0,0,0,20,16ZM7,19a2.9958,2.9958,0,0,1-2.8152-2h5.63A2.9956,2.9956,0,0,1,7,19Zm2.3821-4H4.6179L7,10.2363ZM16,9a1,1,0,1,1,1-1A1.0009,1.0009,0,0,1,16,9Zm9,10a2.9958,2.9958,0,0,1-2.8152-2h5.63A2.9956,2.9956,0,0,1,25,19Zm0-8.7637L27.3821,15H22.6179Z" />
           </svg>
         </button> */}
-        <button className="cursor-pointer p-3 hover:bg-gray-200 outline-none focus:ring-2 ring-inset ring-red-800">
+        {/* <button className="cursor-pointer p-3 hover:bg-gray-200 outline-none focus:ring-2 ring-inset ring-red-800">
           <svg fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
             <path d="M22.45,6a5.47,5.47,0,0,1,3.91,1.64,5.7,5.7,0,0,1,0,8L16,26.13,5.64,15.64a5.7,5.7,0,0,1,0-8,5.48,5.48,0,0,1,7.82,0L16,10.24l2.53-2.58A5.44,5.44,0,0,1,22.45,6m0-2a7.47,7.47,0,0,0-5.34,2.24L16,7.36,14.89,6.24a7.49,7.49,0,0,0-10.68,0,7.72,7.72,0,0,0,0,10.82L16,29,27.79,17.06a7.72,7.72,0,0,0,0-10.82A7.49,7.49,0,0,0,22.45,4Z" />
           </svg>
@@ -185,7 +185,7 @@ export default function Menu() {
           <svg fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
             <path d="M14 4H18V8H14zM4 4H8V8H4zM24 4H28V8H24zM14 14H18V18H14zM4 14H8V18H4zM24 14H28V18H24zM14 24H18V28H14zM4 24H8V28H4zM24 24H28V28H24z"></path>
           </svg>
-        </button>
+        </button> */}
         <Link
           href="#"
           className="text-gray-100 bg-red-800 hover:bg-red-700 p-[9px] outline-none focus:ring-[1px] ring-inset ring-gray-100 border-[3px] border-red-800 hover:border-red-700 hidden sm:block"

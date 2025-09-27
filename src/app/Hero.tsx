@@ -61,8 +61,8 @@ export default function Hero({ data }: Prop) {
                       border-[3px] border-red-800 hover:border-red-700
                     "
                   >
-                    <span className="mr-4 leading-[1.2rem]">{data.link}</span>
-                    <svg fill="currentColor" width="20" height="20" viewBox="0 0 20 20">
+                    <span className="mr-4 leading-[1.2rem] text-gray-100">{data.link}</span>
+                    <svg fill="white" width="20" height="20" viewBox="0 0 20 20">
                       <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                     </svg>
                   </Link>

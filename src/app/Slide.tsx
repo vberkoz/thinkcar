@@ -84,7 +84,7 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
                   "
                 >
                   <svg
-                    fill="currentColor"
+                    fill="white"
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
@@ -107,7 +107,7 @@ export default function Slide({ item, k, isActive, length, onShow }: Props) {
                   "
                 >
                   <svg
-                    fill="currentColor"
+                    fill="white"
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
