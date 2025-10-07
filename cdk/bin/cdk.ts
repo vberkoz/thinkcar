@@ -6,6 +6,7 @@ const app = new cdk.App();
 new ThinkcarStack(app, 'ThinkcarStack', {
   domainName: 'vberkoz.com',
   subdomain: 'thinkcar',
+  githubRepo: 'vberkoz/thinkcar',
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION,

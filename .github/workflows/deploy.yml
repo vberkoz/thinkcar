@@ -1,0 +1,65 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+
+env:
+  # Set environment variables for the CDK app
+  CDK_DEFAULT_REGION: us-east-1 # Change this to your desired AWS region
+  DOMAIN_NAME: vberkoz.com
+  SUBDOMAIN: thinkcar
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    
+    # Permissions are required for the OpenID Connect (OIDC) setup
+    # to authenticate with AWS.
+    permissions:
+      id-token: write # Required for OIDC
+      contents: read # Required to checkout the code
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a recent stable Node.js version
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+            cdk/package-lock.json # Assuming your CDK stack is in a 'cdk' subdirectory
+
+      - name: Install Next.js dependencies
+        run: npm install
+        working-directory: ./ # Adjust if your Next.js app is in a subdirectory
+
+      - name: Build Next.js app
+        run: npm run build
+        working-directory: ./ # Next.js 'out' directory is created here
+
+      - name: Move Next.js output for CDK
+        run: mv ./out ./cdk/out
+
+      - name: Install CDK dependencies
+        run: npm install
+        working-directory: ./cdk # Adjust this to where your cdk project's package.json is
+
+      - name: Configure AWS Credentials with OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ThinkcarGitHubActionsDeployRole # Replace with your IAM Role ARN
+          aws-region: ${{ env.CDK_DEFAULT_REGION }}
+
+      - name: CDK Synth
+        run: npx cdk synth
+        working-directory: ./cdk # Run from the cdk app directory
+
+      - name: CDK Deploy
+        # The --require-approval never is used for non-interactive deployment
+        run: npx cdk deploy --require-approval never
+        working-directory: ./cdk # Run from the cdk app directory
